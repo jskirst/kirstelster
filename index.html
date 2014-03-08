@@ -1,53 +1,199 @@
 <html>
 <head>
 <style>
+/*
+darkgold: rgb(161, 133, 77);
+lightgold: rgb(253, 234, 177);
+red: rgb(158, 45, 35);
+blue: rgb(32, 89, 138);
+*/
+
 @font-face {
   font-family: ParkLane;
   src: url(assets/fonts/ParkLaneNF.ttf);
 }
 body { background-color: black; color: white; }
-h1,h2,h3,h4 { font-family: "ParkLane"; }
-#content { width: 900px; margin: 20px auto; text-align: center; }
-#header {  }
-#header .flourish { width: 400px; max-height: 150px; }
-#header h1 { font-size: 75px; margin: 0;}
-#header h2 { margin: 10px 0; }
-#header h3 { margin: 10px 0; }
-#header h4 { margin: 10px 0; }
-
-h2 { font-size: 50px; }
-
-#portrait img { height: 500px; }
-
+h1,h2,h3,h4, #navbar a { font-family: "ParkLane"; }
+h2, h3, h4, h5, h6 { font-size: 50px; text-align: center;}
 p { font-size: 18px; }
 
-.section { width: 800px; margin: 50px auto; }
+#content { width: 1000px; margin: 20px auto; text-align: center; }
+
+#header {  }
+#header .flourish { width: 400px; max-height: 150px; }
+#header h1 { font-size: 90px; margin: 0;}
+#header h2 { margin: 10px 0; }
+#header h3 { font-size: 20px; margin: 10px 0; }
+#header h4 { font-size: 20px; margin: 10px 0; }
+
+#navbar li { display: inline; margin: 0 20px; font-size: 20px; }
+#navbar li a { color: white; }
+
+.portrait { margin: 0px auto; }
+.portrait img { height: 400px; border: 5px solid rgb(253, 234, 177); }
+
+.section { width: 925px; margin: 25px auto; padding-top: 25px; }
 .section p { text-align: left;}
+
+.column { display: inline-block; text-align: center; }
+.column img { height: 300px; }
+.column p { text-align: center; }
 
 </style>
 </head>
 <body>
   <div id="content">
     <div id="header">
-      <img src="assets/images/flourish.png" class="flourish">
-      <h4>October 4th, 2014</h4>
-      <h1>Martha and Jonathan</h1>
-      <h3>Peabody Opera House, St. Louis Missouri</h3>
-      <img src="assets/images/flourish.png" class="flourish">
+      <img src="http://images.kir.st/wedding/flourish.png" class="flourish">
+      <h3>October 4th, 2014, Peabody Opera House, St. Louis Missouri</h3>
+      <h1>Martha &amp; Jonathan</h1>
+      <img src="http://images.kir.st/wedding/flourish.png" class="flourish">
+      <div id="navbar">
+        <ul>
+          <li><a href="#our_story">Our Story</a></li>
+          <li><a href="#big_day">The Big Day</a></li>
+          <li><a href="#st_louis">Wedding Party</a></li>
+          <li><a href="#wedding_party">St. Louis</a></li>
+          <li><a href="#registry">Registry</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="section">
+    <div class="section" id="our_story">
       <div class="portrait">
-        <img src="http://placekitten.com/g/600/400">
+        <img src="http://images.kir.st/wedding/jcmje.jpg">
       </div>
       <h2>Our Story</h2>
       <p>
         Once upon a time (ie 2006), Jonathan Kirst and Martha Elster were two kiddos about to graduate high school and leave their nests to go to college. Jonathan was a West Coast football player with hopes of a degree in computer programming and Martha was a Southern pre-med with hopes of a degree in science. Little did they know their paths would collide together in the middle of the country in a city neither really knew much about -- St. Louis.
       </p>
       <p>
-        During their sophomore year at WashU, the two landed on the same dorm hallway at opposite ends. As they say, opposites attract and soon JC and Martha were friends. After several months of courtship (aka eating stirfry together at The Village and watching movies like Ratatouille in the common room) the two started dating at the close of sophomore year. Martha and JC found themselves inseperable for the remainder of college. They moved from eating stirfry at the cafeteria every night to learning how to cook together. They tried to take up each other's hobbies, some successful and some unsuccessful (Martha attended her first WashU football game in which she cheered for the wrong team). And they travelled between coasts at every vacation.
+        During their sophomore year at WashU, the two landed on the same dorm hallway at opposite ends. As they say, opposites attract and soon JC and Martha were friends. After several months of courtship (aka eating stirfry together at The Village and watching movies like Ratatouille in the common room) the two started dating at the close of sophomore year. Martha and JC found themselves inseperable for the remainder of college. They moved from eating stir fry at the cafeteria every night to learning how to cook together. They tried to take up each other's hobbies, some successful and some unsuccessful (Martha attended her first WashU football game in which she cheered for the wrong team). And they travelled between coasts at every vacation.
       </p>
       <p>
         After college, Martha moved back to the South for medical school and JC headed back to the West Coast for work. Since then, the two have been stealing time together whenever they can. As they prepare to become Mr. and Mrs. (and as Martha prepares to become Dr.), they are looking forward to a life together starting with residency next year.
+      </p>
+    </div>
+    <div class="section" id="big_day">
+      <div class="portrait">
+        <img src="http://placekitten.com/g/600/400">
+      </div>
+      <h3>The Big Day</h3>
+      <p>
+        Please join Martha and Jonathan for their Wedding Ceremony and Reception at the Peabody Opera House.
+      </p>
+      <p>
+        Ceremony to begin at six o'clock in the evening in the Ticket Mezzanine. Cocktail hour and reception to follow in the Kiel Club and Grand Lobby.
+      </p>
+      <p>
+        1400 Market Street
+        <br/>
+        Saint Louis, Missouri
+      </p>
+    </div>
+    <div class="section" id="wedding_party">
+      <div class="portrait">
+        <img src="http://placekitten.com/g/600/400">
+      </div>
+      <h4>The Wedding Party</h4>
+      <div class="party-table">
+        <div class="row">
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Patti.jpg">
+            <p>Patricia Elster <br/> Maid of Honor</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Ellie.jpg">
+            <p>Ellie Tucker <br/> Matron of Honor</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Hannah.jpg">
+            <p>Hannah Callaway <br/> Bridesmaid</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/JennM.jpg">
+            <p>Jennifer Mathews <br/> Bridesmaid</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Sarah.jpg">
+            <p>Sarah Carter <br/> Bridesmaid</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Katherine.jpg">
+            <p>Katherine Ray <br/> Bridesmaid</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Bethany.jpg">
+            <p>Bethany McDearmon <br/> Bridesmaid</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/JennK.jpg">
+            <p>Jennifer Kirst <br/> Bridesmaid</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Calvin.jpg">
+            <p>Calvin Johnson <br/> Best Man</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Anil.jpg">
+            <p>Anil Rao <br/> Best Man</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Rollins.jpg">
+            <p>Chris Rollins <br/> Groomsman</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Dilfer.jpg">
+            <p>Andrew Newman-Dilfer <br/> Groomsman</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Todd.jpg">
+            <p>Todd Yecies <br/> Groomsman</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Chow.jpg">
+            <p>Harrison Chow <br/> Groomsman</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Andy.jpg">
+            <p>Andy Gregg <br/> Groomsman</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Nathan.jpg">
+            <p>Nathan Sokoll-Ward <br/> Groomsman</p>
+          </div>
+          <div class="column">
+            <img src="http://images.kir.st/wedding/Allen.jpg">
+            <p>Allen Elster <br/> Groomsman</p>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="section" id="st_louis">
+      <div class="portrait">
+        <img src="http://placekitten.com/g/600/400">
+      </div>
+      <h3>St. Louis</h5>
+      <p>
+      Martha and Jonathan are in the process of reserving a block of hotel rooms for wedding guests.
+      </p>
+    </div>
+    <div class="section" id="registry">
+      <div class="portrait">
+        <img src="http://placekitten.com/g/600/400">
+      </div>
+      <h3>St. Louis</h5>
+      <p>
+      Martha and Jonathan are in the process of reserving a block of hotel rooms for wedding guests.
       </p>
     </div>
   </div>
