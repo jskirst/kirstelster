@@ -1,5 +1,6 @@
 <html>
 <head>
+<title>Martha and Jonathan's Wedding</title>
 <link href='http://fonts.googleapis.com/css?family=Bubbler+One' rel='stylesheet' type='text/css'>
 <style>
 /*
@@ -14,12 +15,22 @@ blue: rgb(32, 89, 138);
   src: url(assets/fonts/ParkLaneNF.ttf);
 }
 
-body { background-color: black; color: white; background-image: url(assets/black-thread.png); }
+body { text-align: center; background-color: black; color: white; background-image: url(assets/black-thread.png); margin: 0px; }
 h1,h2,h3,h4, #navbar a { font-family: "ParkLane"; }
-h2, h3, h4, h5, h6 { font-size: 50px; text-align: center;}
-p { font-size: 19px; }
+h2, h3, h4, h5, h6 { font-size: 55px; text-align: center;}
+p { font-size: 20px; letter-spacing: 2px; }
+ul { padding: 0px; }
 
-#content { width: 1000px; margin: 20px auto; text-align: center; }
+a { color: rgb(32, 89, 138); }
+a:visited { color: rgb(158, 45, 35); border-color: transparent; }
+
+p.first-letter:first-letter {
+  font-size: 35px;
+  font-family: "ParkLane";
+  }
+p.first-letter:first-line { line-height: 100%; }
+
+#content { width: 1000px; margin: 0px auto 50px auto; text-align: center; background-color: rgba(12, 12, 12, 1); box-shadow: 0px 5px 20px 10px white;}
 
 #header {  }
 #header .flourish { height: 75px; }
@@ -35,24 +46,29 @@ p { font-size: 19px; }
 #header h1 { font-size: 90px; margin: 0;}
 #header h2 { margin: 10px 0; }
 #header h3 { font-size: 20px; margin: 10px 0; }
-#header h4 { font-si
-  ze: 20px; margin: 10px 0;  }
+#header h4 { font-size: 20px; margin: 10px 0;  }
 
 #navbar li { display: inline; margin: 0 20px; font-size: 20px; }
 #navbar li a { color: white; }
 
-.portrait { margin: 0px auto; }
-.portrait img { height: 400px; border: 5px solid rgb(253, 234, 177); }
+.portrait { margin: 0 auto 40px auto; }
+.portrait img { height: 400px; border: 5px solid rgb(161, 133, 77); }
+.portrait h2 { background-color: rgb(161, 133, 77); margin: 0; padding: 5px; width: 100%; }
 
-.image { margin: 0px auto;}
-.image img { height: 200px; }
+.border { margin: 0px auto;}
+.border img { height: 100px; }
 
-.section { width: 925px; margin: 25px auto; padding-top: 25px; }
-.section p { font-family: 'Bubbler One'; text-align: left;}
+.section { width: 814px; margin: 25px auto; padding-top: 25px; }
+p { font-family: 'Bubbler One'; text-align: left;}
 
 .column { display: inline-block; text-align: center; }
-.column img { height: 300px; }
+.column img { height: 250px; }
 .column p { text-align: center; }
+
+#registry a img { width: 200px; height: 200px; border: 1px solid white; }
+
+#footer { text-align: center; margin: 0 auto; }
+#footer p { text-align: center; }
 
 </style>
 </head>
@@ -74,11 +90,11 @@ p { font-size: 19px; }
       </div>
     </div>
     <div class="section" id="our_story">
-      <div class="portrait">
+      <div class="portrait" style="width: 400px;">
         <img src="http://images.kir.st/wedding/jcmje.jpg">
+        <h2>Our Story</h2>
       </div>
-      <h2>Our Story</h2>
-      <p>
+      <p class="first-letter">
         Once upon a time (ie 2006), Jonathan Kirst and Martha Elster were two kiddos about to graduate high school and leave their nests to go to college. Jonathan was a West Coast football player with hopes of a degree in computer programming and Martha was a Southern pre-med with hopes of a degree in science. Little did they know their paths would collide together in the middle of the country in a city neither really knew much about - St. Louis.
       </p>
       <p>
@@ -88,24 +104,24 @@ p { font-size: 19px; }
         After college, Martha moved back to the South for medical school and JC headed back to the West Coast for work. Since then, the two have been stealing time together whenever they can. As they prepare to become Mr. and Mrs. (and as Martha prepares to become Dr.), they are looking forward to a life together starting with residency next year.
       </p>
     </div>  
-    <div class="image">  
-      <img src="http://images.kir.st/wedding/swirl.png">
+    <div class="border">  
+      <img src="http://images.kir.st/wedding/rounddecal.png">
     </div>
     <div class="section" id="big_day">
-      <div class="portrait">
+      <div class="portrait" style="width: 814px;">
         <img src="http://images.kir.st/wedding/pboutside.jpg">
+        <h2>The Big Day</h2>
       </div>
-      <h3>The Big Day</h3>
-      <p>
+      <img src="http://images.kir.st/wedding/pblogo.jpeg" style="height: 250px; float: left; margin: 0 20px 10px 0">
+      <p class="first-letter">
         Wedding Ceremony: <br/>
         Six o'clock in the evening <br/>
         Peabody Opera House, Ticket Mezzanine
       </p>
-      <p>
+      <p class="first-letter">
         Cocktail Hour and Reception to follow<br/>
         Peabody Opera House, Kiel Club and Grand Lobby<br/>
-        <br/>
-        Formal Attire
+        Formal attire
       </p>
       <p>
         Peabody Opera House
@@ -117,15 +133,15 @@ p { font-size: 19px; }
       <p>
         The Peabody Opera House, originally named the Kiel Opera House, was built in 1932 as part of urban development plans sparked by the 1904 World's Fair in St. Louis. The Opera House was home to a main theater of 3,500 seats and an auditorium of 9,300 seats. The Kiel Opera House opened on April 21, 1934 with it's first show, Aida, hosting multiple stars from the New York Met. The Opera House carried on a strong tradition for the next fifty years with a resume ranging from serving as the home of the St. Louis Symphony to hosting musicians such as Elvis Presley, Billy Joel, and the Rolling Stones. The Kiel Opera House was closed in 1991 and was renovated and reopened in 2010 by the Peabody Energy Company under the new name of the Peabody Opera House.
       </p>  
-      <p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12466.951628103268!2d-90.20262830688476!3d38.6319101224591!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f98a72a4beef768!2sPeabody+Opera+House!5e0!3m2!1sen!2sus!4v1394383727219" width="500" height="350" frameborder="0" style="border:0"></iframe>
-      </p>
+    </div>
+    <div class="border">  
+      <img src="http://images.kir.st/wedding/rounddecal.png">
     </div>
     <div class="section" id="wedding_party">
-      <div class="portrait">
+      <div class="portrait" style="width: 600px;">
         <img src="http://images.kir.st/wedding/group.jpg">
+        <h2>The Wedding Party</h2>
       </div>
-      <h4>The Wedding Party</h4>
       <div class="party-table">
         <div class="row">
           <div class="column">
@@ -209,54 +225,66 @@ p { font-size: 19px; }
         </div>  
       </div>
     </div>
+    <div class="border">  
+      <img src="http://images.kir.st/wedding/bordergold.png">
+    </div>
     <div class="section" id="st_louis">
-      <div class="portrait">
+      <div class="portrait" style="width: 550px;">
         <img src="http://images.kir.st/wedding/SoStL3.jpg">
+        <h2>St. Louis</h2>
       </div>
-      <h3>St. Louis</h5>
-      <p>
+      <p class="first-letter">
         Martha and Jonathan are excited to share their home away from home with you! <br/> 
       </p>
       <p>
         For those who are new to St. Louis and are planning to fly, the closest airport is Lambert St. Louis International (STL). Once at the airport, there are many options for transportation to downtown which is approximately 15 miles away. The MetroLink departs from the airport and will take guests downtown for approximately $3. Cabs can be easily taken from the airport to the hotels downtown for around $35-40. Many hotels also provide shuttles from the airport for a fee.
       </p>
       <p>
-        Martha and Jonathan are in the process of reserving a block of hotel rooms for wedding guests at the Hilton at the Ballpark in downtown St. Louis. They will update this section as they know more!
+        The bride and groom are in the process of reserving a block of hotel rooms for wedding guests at the Hilton at the Ballpark in downtown St. Louis. They will update this section as they know more!
       </p>
       <p>
         Links to assist you:<br/>
         <a href="http://www.metrostlouis.org/PlanYourTrip/MetroLinkPDFSchedules.aspx">St. Louis MetroLink</a>
        <br/>
-       <a href="">text</a>
       </p>
     </div>
+    <div class="border">  
+      <img src="http://images.kir.st/wedding/goldline.png">
+    </div>
     <div class="section" id="registry">
-      <div class="portrait">
+      <div class="portrait" style="width: 533px;">
         <img src="http://images.kir.st/wedding/fave3.jpg">
+        <h2>Registry</h2>
       </div>
-      <h3>Registry</h5>
-      <p>
+      <p class="first-letter">
         Martha and Jonathan would like to encourage each guest to help use their big day to give back to the community! They have created a charity registry in their names to support the foundation Autism Speaks.
       </p>
       <p>
         Autism Speaks is the world's leading autism science and advocacy organization, dedicated to funding research into the causes, prevention and treatments for autism, increasing awareness of autism spectrum disorders, and advocating for the needs of individuals with autism and their families. Please click the image below to donate to this great cause.
-        <br/>
-        <a href="http://www.crowdrise.com/marthaandjonathan/fundraiser/marthaelster">
-          <img src="http://images.kir.st/wedding/autism.jpg" border="0" style="width: 200px; height: 200px">
-        </a>
       </p>
+      <div style="text-align: center">
+        <a href="http://www.crowdrise.com/marthaandjonathan/fundraiser/marthaelster" target="_blank">
+          <img src="http://images.kir.st/wedding/autism.jpg" border="0" style="width: 200px; height: 200px; border: 1px solid white;">
+        </a>
+      </div>
       <p>
-        Martha and Jonathan have also registered at Macy's and Pottery Barn. Use the images below to go to their registry pages.
+        If you'd rather give a more traditional gift for the bride and groom's new home, Martha and Jonathan have also registered at Macy's and Pottery Barn. Use the images below to go to their registry pages.
       </p> 
-      <p>
-        <a href="http://www1.macys.com/registry/wedding/guest/?registryId=6108127">
-          <img src="http://images.kir.st/wedding/macys.jpg" border="0" style="width: 200px; height: 200px">
+      <div style="text-align: center">
+        <a href="http://www1.macys.com/registry/wedding/guest/?registryId=6108127" target="_blank">
+          <img src="http://images.kir.st/wedding/macys.jpg">
         </a> 
-        <a href="http://www.potterybarn.com/registry/3462296/registry-list.html">
-          <img src="http://images.kir.st/wedding/pottery.jpg" border="2" style="width: 200px; height: 200px">
+        <a href="http://www.potterybarn.com/registry/3462296/registry-list.html" target="_blank">
+          <img src="http://images.kir.st/wedding/pottery.jpg">
         </a>
-      </p>
+      </div>
     </div>
+    <div class="border">  
+      <img src="http://images.kir.st/wedding/rounddecal.png">
+    </div>
+  </div>
+  <div id="footer">
+    <p>Source code hosted on <a href="https://github.com/jskirst/kirstelster" target="_blank">Github.com</a>
   </div>
 </body>
 </html>
